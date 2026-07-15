@@ -73,9 +73,7 @@ const Footer = () => {
           </p>
         </div>
         <ul className="flex flex-col sm:flex-row items-center  gap-3">
-          <li>Privacy Policy</li>
-          <li>Terms and conditions</li>
-          <li> copyright @code bless me </li>
+         
         </ul>
       </div>
     </>
