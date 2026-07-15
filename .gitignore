@@ -1,0 +1,72 @@
+# =========================================================================
+# Node / Dependency Modules
+# =========================================================================
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# =========================================================================
+# Environment Variables & Secrets (CRITICAL SECURITY)
+# =========================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+server/.env
+client/.env
+
+# =========================================================================
+# Production / Build Artifacts
+# =========================================================================
+client/build/
+client/dist/
+server/dist/
+out/
+
+# =========================================================================
+# Logs and Runtime Files
+# =========================================================================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+server/*.sock
+server/*.lock
+server/*.pid
+
+# =========================================================================
+# IDE / Editor Configurations
+# =========================================================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# =========================================================================
+# Testing & Code Coverage
+# =========================================================================
+coverage/
+client/coverage/
+server/coverage/
+.nyc_output
+
+# =========================================================================
+# OS Specific Files
+# =========================================================================
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+Desktop.ini
+
+# =========================================================================
+# Optional: Local Media Uploads (if handling user uploads in the backend)
+# =========================================================================
+server/uploads/
+server/public/uploads/
