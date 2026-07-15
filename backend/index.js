@@ -13,8 +13,9 @@ app.use(cors());
 app.use("/images", express.static("uploads"));
 app.use("/user", userRoutes);
 app.use("/blog", blogRoutes);
-const PORT = 4000;
-app.listen(PORT, () => {
-  connectDB();
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, async () => {
+  await connectDB();
   console.log(`Server is running on port ${PORT}`);
 });

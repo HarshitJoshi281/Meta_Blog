@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
+import { BACKEND_URL } from "../config/api";
 export const StoreContext = createContext(null);
 const StoreContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -14,7 +15,7 @@ const StoreContextProvider = ({ children }) => {
   useEffect(() => {
     const allBolgs = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/blog/all");
+        const res = await axios.get(`${BACKEND_URL}/blog/all`);
 
         setBlogData(res.data.blogs);
       } catch (error) {
